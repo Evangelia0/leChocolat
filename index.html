@@ -24,7 +24,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="#">
                             <span class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html">
@@ -35,9 +35,146 @@
                     <li class="nav-item"><a class="nav-link" href="/contactus.html">
                             <span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputEmail3">Email
+                                address
+                            </label>
+                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputPassword3">
+                                Password
+                            </label>
+                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox">
+                                Remember me
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel
+                    </button>
+                    <button type="submit" class="btn btn-primary btn-sm">
+                        Sign in
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve your baskets </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="optradio" class="col-12 col-sm-3 col-form-label">
+                                Number of baskets
+                            </label>
+                            <div class="col-12 col-sm-9">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">3 </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                                        value="option4">
+                                    <label class="form-check-label" for="inlineRadio4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5"
+                                        value="option5">
+                                    <label class="form-check-label" for="inlineRadio5">5</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6"
+                                        value="option6">
+                                    <label class="form-check-label" for="inlineRadio6">6 </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-12 col-sm-3 col-form-label">Date and Time</label>
+                            <div class="input-group col-12 col-sm-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                </div>
+                                <input type="date" class="form-control" id="date">
+                            </div>
+                            <div class="input-group col-12 col-sm-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                </div>
+                                <input type="time" class="form-control" id="time">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-12 col-sm-3 col-form-label">Home Delivery</label>
+                            <div class="input-group col-12 col-sm-9 btn-group">
+                                <label class="btn btn-success">
+                                    <input type="radio" name="section" id="home Delivery" checked>
+                                    Yes
+                                </label>
+                                <label class="btn btn-danger">
+                                    <input type="radio" name="section" id="non-home-Delivery">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                        <!-- <button type="submit" class="btn btn-primary btn-sm col-sm-offset-2">Reserve</button> -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel
+                    </button>
+                    <button type="submit" class="btn btn-primary btn-sm">
+                        Reserve
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header class="jumbotron">
         <div class="container">
@@ -51,14 +188,78 @@
                     <img src="images/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a class="btn btn-warning btn-sm" href="#reserve-form">Reserve your baskets</a>
+                    <!-- <a class="btn btn-warning btn-sm" href="#reserve-form" role="button" data-html="true"
+                        data-toggle="tooltip" title="Or Call us at <br><strong>+ 987 6543 2100</strong>"
+                        data-placement="bottom">
+                        Reserve your baskets
+                    </a> -->
+                    <a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#reserveModal" role="button">
+                        Reserve your baskets
+                    </a>
+                    <!-- <button class="btn btn-warning"><a href="#reserve-form">Reserve your baskets</a></button> -->
                 </div>
             </div>
         </div>
     </header>
 
     <div class="container">
-        <div class="row flex-row-reverse row-content align-items-center">
+        <div class="row row-content">
+            <div class="col-12">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img src="images/dark85.jpg" alt="85% DARK CHOCOLATE">
+                            <div class="carousel-caption d-none d-sm-block">
+                                <h2>85% DARK CHOCOLATE
+                                    <span class="badge badge-danger">HOT</span>
+                                    <span class="badge badge-pill badge-success">$0.99</span>
+                                </h2>
+                                <p class="col d-none d-sm-block">Dark chocolate with no added sugar.
+                                    Here you can taste the flavor of cocoa beans.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/promotion.jpg" alt="Our basket">
+                            <div class="carousel-caption d-none d-sm-block">
+                                <h2>WEEK’S OFFER
+                                    <span class="badge badge-danger">NEW</span>
+                                    <span class="badge badge-pill badge-success">$4.99</span>
+                                </h2>
+                                <p class="col d-none d-sm-block">This week we offer a basket
+                                    with 10 delicious chocolates!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/cartoonVasilis.png" alt="Vasilis Wilson">
+                            <div class="carousel-caption d-none d-sm-block">
+                                <h2>Vasilis Wilson
+                                </h2>
+                                <p class="col d-none d-sm-block">Vasilis is well informed of all the current
+                                    trends in pastry and contributes his innovative ideas in our products.
+                                </p>
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#mycarousel" data-slide-to="1"></li>
+                            <li data-target="#mycarousel" data-slide-to="2"></li>
+                        </ol>
+                        <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row flex-row-reverse row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h3>Our famous chocolates</h3>
             </div>
@@ -66,7 +267,8 @@
                 <div class="media">
                     <img src="images/dark85.jpg" class="d-flex mr-3 img-thumbnail align-self-center">
                     <div class="media-body">
-                        <h2>85% DARK CHOCOLATE <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-success">$0.99</span></h2>
+                        <h2>85% DARK CHOCOLATE <span class="badge badge-danger">HOT</span> <span
+                                class="badge badge-pill badge-success">$0.99</span></h2>
                         <p>Dark chocolate with no added sugar. Here you can taste the flavor of cocoa beans.</p>
                     </div>
                 </div>
@@ -81,12 +283,13 @@
                 <div class="media">
                     <img src="images/promotion.jpg" class="d-flex mr-3 img-thumbnail align-self-center">
                     <div class="media-body">
-                        <h2>Our basket <span class="badge badge-danger">NEW</span> <span class="badge badge-pill badge-success">$4.99</span></h2>
+                        <h2>Our basket <span class="badge badge-danger">NEW</span> <span
+                                class="badge badge-pill badge-success">$4.99</span></h2>
                         <p>This week we offer a basket with 10 delicious chocolates! </p>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
@@ -98,13 +301,14 @@
             </div>
         </div> -->
 
-        <div class="row flex-row-reverse row-content align-items-center">
+        <!-- <div class="row flex-row-reverse row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h3>Meet our Specialists</h3>
             </div>
             <div class="col-sm col-md">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="images/cartoonVasilis.png" alt="Vasilis Wilson">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="images/cartoonVasilis.png"
+                        alt="Vasilis Wilson">
                     <div class="media-body">
                         <h2 class="mt-0">Vasilis Wilson</h2>
                         <p class="col d-none d-md-block">Vasilis is well informed of all the current
@@ -112,74 +316,18 @@
                     </div>
                 </div>
             </div>
-        </div>
-
+        </div> -->
+        <!-- 
         <div class="row row-content justify-content-center">
             <div class="col-12 col-sm-8">
                 <div class="card border-default">
-                    <h3 class="card-header bg-warning" style="color:white;" id="reserve-form">Reserve your baskets</h3>
+                    <h3 class="card-header bg-warning" style="color:white" id="reserve-form">Reserve your baskets</h3>
                     <div class="card-body">
-                        <form>
-                            <div class="form-group row">
-                                <label for="optradio" class="col-12 col-sm-3 col-form-label">
-                                    Number of baskets
-                                </label>
-                                <div class="col-12 col-sm-9">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                            value="option1">
-                                        <label class="form-check-label" for="inlineRadio1">1</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                            value="option2">
-                                        <label class="form-check-label" for="inlineRadio2">2</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                                            value="option3">
-                                        <label class="form-check-label" for="inlineRadio3">3 </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
-                                            value="option4">
-                                        <label class="form-check-label" for="inlineRadio4">4</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5"
-                                            value="option5">
-                                        <label class="form-check-label" for="inlineRadio5">5</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6"
-                                            value="option6">
-                                        <label class="form-check-label" for="inlineRadio6">6 </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-12 col-sm-3 col-form-label">Date and Time</label>
-                                <div class="input-group col-12 col-sm-4">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-                                    </div>
-                                    <input type="date" class="form-control" id="date">
-                                </div>
-                                <div class="input-group col-12 col-sm-4">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="time"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
-                                    </div>
-                                    <input type="time" class="form-control" placeholder="Time" id="time'">
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-sm col-sm-offset-2">Reserve</button>
 
-
-                        </form>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <footer class="footer">
@@ -236,6 +384,11 @@
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script> -->
 
 </body>
 
